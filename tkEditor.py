@@ -47,10 +47,10 @@ def full():
                 mb.showerror("Error!", "Error")
 
 
-def copy(self):
-                self.clipboard_clear()
-                text = self.get("sel.first", "sel.last")
-                self.clipboard_append(text)
+def copy():
+        self.clipboard_clear()
+        text = self.get("sel.first", "sel.last")
+        self.clipboard_append(text)
 
 
 def fonts():
@@ -81,6 +81,8 @@ view_menu.add_command(label="Change language")
 view_menu.add_command(label="Change font", command=fonts)
 view_menu.add_command(label="Enter fullscreen mode", command=full)
 
+
+
 """main menu"""
 main_menu.add_cascade(label="File", menu=file_menu)
 main_menu.add_cascade(label="Edit", menu=file_edit)
@@ -88,7 +90,9 @@ main_menu.add_cascade(label="View", menu=view_menu)
 
 root.config(menu=main_menu)
 
+root.geometry("{0}x{1}+0+0".format(root.winfo_screenwidth(), root.winfo_screenheight()))
 
+root.bind("<Escape>", lambda e: root.quit())
 root.title("Dante's text editor")
 
 
@@ -98,16 +102,16 @@ b = Text(width=250,
          bg="grey",
          fg="white",
          wrap=WORD)
-alt = Text(width=250,
+"""alt = Text(width=100,
            height=10,
            bg="white",
            fg="black",
-           wrap=WORD)
+           wrap=WORD)"""
 """c=Button(text="Очистить", bg="grey", command=text_delete)
 d=Button(text="Сохранить", bg="grey", command=save)
 a.pack()"""
 b.pack()
-alt.pack()
+"""alt.pack()"""
 """c.pack()
 d.pack()"""
 
