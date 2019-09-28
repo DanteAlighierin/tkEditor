@@ -21,7 +21,8 @@ class config(object):
        cursorColor = "green"
 
 class syntaxHighligh(object):
-       colors = {"import" : "red",
+       colors = {"%" : "plum",
+                 "import" : "red",
                  "def" : "red",
                  "format" : "red",
                  "if" : "red",
@@ -41,4 +42,29 @@ class syntaxHighligh(object):
                  "in" : "red",
                  "print" : "red",
                  "lambda" : "red",
-                 }
+                 "1" : "red",
+                 "2" : "red",
+                 "3" : "red",
+                 "4" : "red",
+                 "5" : "red",
+                 "6" : "red",
+                 "7" : "red",
+                 "8" : "red",
+                 "9" : "red",
+                 "0" : "red",
+                 "+" : "red",
+                 "-" : "red",
+                 "\"" : "red",
+                 "#" : "grey",
+                 "\"""" : "grey",
+                 "." : "red",
+                 "<" : "red",
+                 ">" : "red",
+                 "~" : "red",
+                 "/" : "red",
+                 "*" : "red",
+                 "^" : "red",
+                 "&" : "red"
+
+
+                }
