@@ -122,4 +122,9 @@ class Editor(object):
                syntaxhl.highlight(self.editor_space, keyw, color)
 
        def about(self):
-           pass
+                      def new_window(): 
+                                       newWindow = Toplevel(root)
+                                       display = Label(newWindow, width=200, height=50,bg='RED')
+                                       message = Label(newWindow, text="HEEEY",fg='BLACK',bg='GREEN')
+                                       message.pack()
+                                       display.pack()

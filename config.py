@@ -13,7 +13,7 @@ class config(object):
        matchColor = "blue"
 
        # Theme
-       transparency = 1
+       transparency = 10
        background = "black"
        foreground = "white"
        font = "Arial"

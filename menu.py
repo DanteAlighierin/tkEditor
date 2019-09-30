@@ -51,9 +51,9 @@ class Settings(object):
            menubar.add_cascade(label = "Preferences", menu = self.prefmenu)
 
 class View(object):
-                   def __init__(self, menubar):
-                      self.viewses = tkinter.Menu(menubar)
+      def __init__(self, menubar):
+           self.viewses = tkinter.Menu(menubar)
 
-                      self.viewses.add_command(label="View", command=None)
+           self.viewses.add_command(label="View", command=None)
 
-                      menubar.add_cascade(label="Fullscreen mode", menu = self.viewses)
+           menubar.add_cascade(label="Fullscreen mode", menu = self.viewses)
