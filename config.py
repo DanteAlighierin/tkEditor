@@ -4,7 +4,6 @@ class config(object):
 
        # The default extension used when saving a file.
        defext = ".txt"
-
        # Size of the editor window.
        width = 150
        height = 50
@@ -21,7 +20,7 @@ class config(object):
        cursorColor = "green"
 
 class syntaxHighligh(object):
-       colors = {"%" : "plum",
+       colors = {"l" : "blue",
                  "import" : "red",
                  "def" : "red",
                  "format" : "red",
@@ -54,9 +53,7 @@ class syntaxHighligh(object):
                  "0" : "red",
                  "+" : "red",
                  "-" : "red",
-                 "\"" : "red",
                  "#" : "grey",
-                 "\"""" : "grey",
                  "." : "red",
                  "<" : "red",
                  ">" : "red",
