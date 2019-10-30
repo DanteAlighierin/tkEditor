@@ -19,7 +19,7 @@ class config(object):
        font_size = 18
        cursorColor = "green"
 
-class syntaxHighligh(object):
+class syntaxHighligh(object): #python and bash
        colors = {"l" : "blue",
                  "import" : "red",
                  "def" : "red",
